@@ -1,0 +1,10 @@
+1- protected internal:
+
+ال code member لما يكون protected internal كانى عامل or بين ال protected و ال internal حسب الحاجه يعنى لو انا معرف property أنها  protected internal  و استخدمتها جوا نفس البروجيكت فا عادى هتتصرف كانها internal بس لو حاولت استخدمها بره ال project بس بشرط انى بستخدمها فى class بيورث من ال class الى معرفها فيه هينفع عادى و هتتصرف كانها protected فا دى ميزتها انى استخدم ال member جوا نفس ال project او بره بس بشرط فى مكان بيورث المكان الى معرفه فيه
+
+
+
+
+2- private protected:
+هنا بقى هو عكس ال protected internal   هو هنا بيعمل and مش or بمعنى ان لازم علشان اعمل access على member نوعه private protected لازم اكون بورث من المكان الى متعرف فيه + انى اكون معاه فى نفس البروجيكت 
+يعنى مينفعش بورث لكن بره البروجيكت مش هقدر اشوفه
