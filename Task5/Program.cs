@@ -249,9 +249,14 @@ namespace Task5
                                             if (!string.IsNullOrEmpty(YourAnswer))
                                             {
                                                 string[] myanswers = YourAnswer.Split(',');
+                                                string[] ans = new string[4];
+                                                for (int t=0; t < myanswers.Length; t++)
+                                                {
+                                                    ans[t] = myanswers[t];
+                                                }
                                                 for (int j = 0; j < des.CorrectAnswers.Length; j++)
                                                 {
-                                                    if (myanswers[j] != des.CorrectAnswers[j])
+                                                    if (ans[j] != des.CorrectAnswers[j])
                                                     {
                                                         flag = false;
                                                         break;
@@ -336,9 +341,14 @@ namespace Task5
                                                 if (!string.IsNullOrEmpty(YourAnswer))
                                                 {
                                                     string[] myanswers = YourAnswer.Split(',');
+                                                    string[] ans = new string[4];
+                                                    for (int t = 0; t < myanswers.Length; t++)
+                                                    {
+                                                        ans[t] = myanswers[t];
+                                                    }
                                                     for (int j = 0; j < des.CorrectAnswers.Length; j++)
                                                     {
-                                                        if (myanswers[j] != des.CorrectAnswers[j])
+                                                        if (ans[j] != des.CorrectAnswers[j])
                                                         {
                                                             flag = false;
                                                             break;
