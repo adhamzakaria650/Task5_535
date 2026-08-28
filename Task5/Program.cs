@@ -33,8 +33,12 @@ namespace Task5
                                     q.Type = "True/False";
                                     Console.Write("Enter Question Level (Easy/Medium/Hard): ");
                                     string level = Console.ReadLine().Trim().ToLower();
-                                    if (level == "easy" || level == "medium" || level == "hard")
-                                        q.Level = level;
+                                    if (level == Level.easy.ToString())
+                                        q.Level = Level.easy;
+                                    else if( level == Level.medium.ToString())
+                                        q.Level= Level.medium;
+                                    else if(level == Level.hard.ToString())
+                                        q.Level=Level.hard;
                                     else
                                         Console.WriteLine("Invalid Level");
                                     Console.Write("Enter Question Header: ");
@@ -71,10 +75,12 @@ namespace Task5
                                     q.Type = "ChooseOne";
                                     Console.Write("Enter Question Level (Easy/Medium/Hard): ");
                                     string level = Console.ReadLine().Trim().ToLower();
-                                    if (level == "easy" || level == "medium" || level == "hard")
-                                    {
-                                        q.Level = level;
-                                    }
+                                    if (level == Level.easy.ToString())
+                                        q.Level = Level.easy;
+                                    else if (level == Level.medium.ToString())
+                                        q.Level = Level.medium;
+                                    else if (level == Level.hard.ToString())
+                                        q.Level = Level.hard;
                                     else
                                         Console.WriteLine("Invalid Level");
                                     Console.Write("Enter Question Header: ");
@@ -122,10 +128,12 @@ namespace Task5
                                     q.Type = "MultipleChoice";
                                     Console.Write("Enter Question Level (Easy/Medium/Hard): ");
                                     string level = Console.ReadLine().Trim().ToLower();
-                                    if (level == "easy" || level == "medium" || level == "hard")
-                                    {
-                                        q.Level = level;
-                                    }
+                                    if (level == Level.easy.ToString())
+                                        q.Level = Level.easy;
+                                    else if (level == Level.medium.ToString())
+                                        q.Level = Level.medium;
+                                    else if (level == Level.hard.ToString())
+                                        q.Level = Level.hard;
                                     else
                                         Console.WriteLine("Invalid Level");
                                     Console.Write("Enter Question Header: ");
@@ -192,7 +200,7 @@ namespace Task5
                                 List<Question> examQuestions = new List<Question>();
                                 for(int i = 0; i < questions.Count; i++)
                                 {
-                                    if (questions[i].Level == Level)
+                                    if (questions[i].Level.ToString() == Level)
                                     {
                                         examQuestions.Add(questions[i]);
                                     }
@@ -288,7 +296,7 @@ namespace Task5
                                 Console.WriteLine("");
                                 for (int i = 0; i < questions.Count; i++)
                                 {
-                                    if (questions[i].Level == Level)
+                                    if (questions[i].Level.ToString() == Level)
                                     {
                                         if (questions[i].Type == "True/False")
                                         {
